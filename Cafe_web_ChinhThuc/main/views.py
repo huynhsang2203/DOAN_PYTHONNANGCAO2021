@@ -46,7 +46,7 @@ def save(request):
         context = PostForm(request.POST)
         if context.is_valid():
             context.save()
-            return HttpResponse('Đóng góp của bạn đã được gửi thành công đến chúng tôi. Rẩt cảm ơn bạn!')
+            return render(request, './reports/thanks.html')
         else:
             HttpResponse('Chua luu')
     else:

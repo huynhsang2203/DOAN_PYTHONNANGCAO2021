@@ -1,22 +1,28 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="{%static 'comment.css' %}">
+    <link rel="shortcut icon"
+        href="https://as1.ftcdn.net/v2/jpg/02/96/27/28/1000_F_296272864_7XXe0wavzRXA9zKSkzXxhmZhQbyY8b26.jpg">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bình luận</title>
 </head>
 
 <body>
-    <h2>Những ý kiến đóng góp của bạn giúp phần nâng cao chất lượng dịch vụ của chúng tôi</h2>
+    <h2 style="color:cornflowerblue">Những ý kiến đóng góp của bạn giúp phần nâng cao chất lượng dịch vụ của chúng tôi
+        <button style="width: 100px; background-color:yellow"><a href="{%url 'home'%}"
+                style="text-decoration: none">Trang chủ</a></button>
+    </h2>
     <ol>
         {%if list%}
         {%for item in list%}
-        <p>Bình luận mới:</p>
-        <p>{{item.title}}</p>
-        <p>{{item.content}}</p>
+        <p><b>Bình luận mới:</b></p>
+        <p>- Khách hàng: <i>{{item.title}}</i></p>
+        <p>- Nội dung: <i>{{item.content}}</i></p>
 
         {%endfor%}
         {%else%}
