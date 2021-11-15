@@ -6,26 +6,34 @@ https://www.tooplate.com/view/2126-antique-cafe
 
 */
 
-
 body {
     font-family: 'Raleway', sans-serif;
     background-color: #666;
 }
 
 p a {
-	color: #FF6;
+    color: #FF6;
 }
 
 p a:hover {
-	color: #9FF;
+    color: #9FF;
 }
 
-#about p a { color: #066; }
-#about p a:hover { color: #F36; }
+#about p a {
+    color: #066;
+}
 
-#contact p a { color: #066; }
+#about p a:hover {
+    color: #F36;
+}
 
-footer span a { color: #FFF; }
+#contact p a {
+    color: #066;
+}
+
+footer span a {
+    color: #FFF;
+}
 
 .tm-logo-font {
     font-family: 'Oswald', sans-serif;
@@ -82,23 +90,24 @@ a.tm-bg-green:hover {
 
 .input:focus {
     outline: none !important;
-    border:1px solid #CC9966;
+    border: 1px solid #CC9966;
     box-shadow: 0 0 10px #b67533;
 }
 
-input::placeholder,
-textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+input::placeholder, textarea::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: rgb(214, 212, 212);
-    opacity: 1; /* Firefox */
+    opacity: 1;
+    /* Firefox */
 }
-  
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
     color: rgb(214, 212, 212);
 }
-  
-input::-ms-input-placeholder,
-textarea::-ms-input-placeholder { /* Microsoft Edge */
+
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+    /* Microsoft Edge */
     color: rgb(214, 212, 212);
 }
 
@@ -108,7 +117,7 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 #tm-nav.scroll {
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 #tm-nav li a {
@@ -116,9 +125,8 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
     transition: all 0.3s ease;
 }
 
-#tm-nav li a.current,
-#tm-nav li a:hover {
-      border-bottom: 4px solid #CC9966;
+#tm-nav li a.current, #tm-nav li a:hover {
+    border-bottom: 4px solid #CC9966;
 }
 
 .tm-text-2xl {
@@ -151,15 +159,12 @@ textarea::-ms-input-placeholder { /* Microsoft Edge */
     .tm-menu-item {
         flex-direction: column;
     }
-
     .tm-menu-item-2 {
         flex-direction: column-reverse;
     }
-
     .tm-menu-item img {
         margin-bottom: 10px;
     }
-
     .tm-menu-item-2 img {
         margin-bottom: 10px;
     }
